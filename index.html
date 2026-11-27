@@ -53,6 +53,56 @@
  .hero .saber{margin:14px auto 0;width:190px}
 }
 
+
+/* Ajustes móviles: menú compacto y fotografía visible en la cuenta regresiva */
+@media(max-width:650px){
+  .nav.open .links{
+    padding:12px 20px;
+    gap:12px;
+  }
+  .nav.open .links a{
+    font-size:18px;
+    line-height:1.25;
+  }
+  #contador{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding:76px 18px 58px;
+    min-height:100svh;
+  }
+  #contador .scene-art{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:auto;
+    height:31svh;
+    background-size:cover;
+    background-position:center 24%;
+    opacity:1;
+  }
+  #contador .scene-art:after{
+    background:linear-gradient(180deg,#02050b00 0%,#02050b10 48%,#03060e 100%);
+  }
+  #contador .content{
+    margin-top:25svh;
+    width:100%;
+    max-width:100%!important;
+  }
+  #contador .kicker{font-size:10px;letter-spacing:.2em}
+  #contador .rule{margin:12px auto 15px}
+  #contador h2{font-size:clamp(34px,9vw,46px)}
+  #contador p{font-size:15px;line-height:1.5;margin:12px auto}
+  #contador .count{margin:18px auto 12px;width:100%;gap:5px}
+  #contador .unit{padding:12px 2px}
+  #contador .num{font-size:clamp(25px,7vw,36px)}
+  #contador .unit small{font-size:9px}
+  #contador .saber{margin:13px auto}
+  #contador .emblem{margin:8px auto;font-size:32px}
+  #contador .next{bottom:12px}
+}
+
 </style></head><body class="lock"><div class="stars"></div><div class="opening" id="opening">
   <div class="opening-stars"></div>
   <div class="opening-farfar" id="openingFarfar">Hace mucho tiempo, en una galaxia muy, muy lejana…</div>
